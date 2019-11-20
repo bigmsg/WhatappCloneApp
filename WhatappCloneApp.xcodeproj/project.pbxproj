@@ -3,27 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		336E34E92385E70800DC164A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E34E82385E70800DC164A /* AppDelegate.swift */; };
 		336E34EB2385E70800DC164A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E34EA2385E70800DC164A /* SceneDelegate.swift */; };
-		336E34ED2385E70800DC164A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E34EC2385E70800DC164A /* ContentView.swift */; };
+		336E34ED2385E70800DC164A /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E34EC2385E70800DC164A /* AuthView.swift */; };
 		336E34EF2385E70900DC164A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 336E34EE2385E70900DC164A /* Assets.xcassets */; };
 		336E34F22385E70900DC164A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 336E34F12385E70900DC164A /* Preview Assets.xcassets */; };
 		336E34F52385E70900DC164A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 336E34F32385E70900DC164A /* LaunchScreen.storyboard */; };
+		336E34FD2385E7B600DC164A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 336E34FC2385E7B600DC164A /* GoogleService-Info.plist */; };
+		DE05E3C490B9F41BB730E06E /* Pods_WhatappCloneApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 549556FC0AAFB95C6DC702CE /* Pods_WhatappCloneApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		336E34E52385E70800DC164A /* WhatappCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatappCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		336E34E82385E70800DC164A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		336E34EA2385E70800DC164A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		336E34EC2385E70800DC164A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		336E34EC2385E70800DC164A /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		336E34EE2385E70900DC164A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		336E34F12385E70900DC164A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		336E34F42385E70900DC164A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		336E34F62385E70900DC164A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		336E34FC2385E7B600DC164A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		49D2AD8BE4D8EB7C3A617E82 /* Pods-WhatappCloneApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatappCloneApp.release.xcconfig"; path = "Target Support Files/Pods-WhatappCloneApp/Pods-WhatappCloneApp.release.xcconfig"; sourceTree = "<group>"; };
+		549556FC0AAFB95C6DC702CE /* Pods_WhatappCloneApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatappCloneApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97D7F022B1F065F3B9BE009F /* Pods-WhatappCloneApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatappCloneApp.debug.xcconfig"; path = "Target Support Files/Pods-WhatappCloneApp/Pods-WhatappCloneApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE05E3C490B9F41BB730E06E /* Pods_WhatappCloneApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C0E5A5597583CA73FE19072 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				549556FC0AAFB95C6DC702CE /* Pods_WhatappCloneApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		336E34DC2385E70800DC164A = {
 			isa = PBXGroup;
 			children = (
 				336E34E72385E70800DC164A /* WhatappCloneApp */,
 				336E34E62385E70800DC164A /* Products */,
+				4D997858B386714F6A4E5669 /* Pods */,
+				0C0E5A5597583CA73FE19072 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +75,11 @@
 			children = (
 				336E34E82385E70800DC164A /* AppDelegate.swift */,
 				336E34EA2385E70800DC164A /* SceneDelegate.swift */,
-				336E34EC2385E70800DC164A /* ContentView.swift */,
+				336E34EC2385E70800DC164A /* AuthView.swift */,
 				336E34EE2385E70900DC164A /* Assets.xcassets */,
 				336E34F32385E70900DC164A /* LaunchScreen.storyboard */,
 				336E34F62385E70900DC164A /* Info.plist */,
+				336E34FC2385E7B600DC164A /* GoogleService-Info.plist */,
 				336E34F02385E70900DC164A /* Preview Content */,
 			);
 			path = WhatappCloneApp;
@@ -75,6 +93,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4D997858B386714F6A4E5669 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97D7F022B1F065F3B9BE009F /* Pods-WhatappCloneApp.debug.xcconfig */,
+				49D2AD8BE4D8EB7C3A617E82 /* Pods-WhatappCloneApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 336E34F92385E70900DC164A /* Build configuration list for PBXNativeTarget "WhatappCloneApp" */;
 			buildPhases = (
+				D46FDAC9F54F18C0C2B2D86D /* [CP] Check Pods Manifest.lock */,
 				336E34E12385E70800DC164A /* Sources */,
 				336E34E22385E70800DC164A /* Frameworks */,
 				336E34E32385E70800DC164A /* Resources */,
+				B8736B406FF6446F1A16212A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,12 +163,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				336E34F52385E70900DC164A /* LaunchScreen.storyboard in Resources */,
+				336E34FD2385E7B600DC164A /* GoogleService-Info.plist in Resources */,
 				336E34F22385E70900DC164A /* Preview Assets.xcassets in Resources */,
 				336E34EF2385E70900DC164A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B8736B406FF6446F1A16212A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatappCloneApp/Pods-WhatappCloneApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatappCloneApp/Pods-WhatappCloneApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WhatappCloneApp/Pods-WhatappCloneApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D46FDAC9F54F18C0C2B2D86D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhatappCloneApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		336E34E12385E70800DC164A /* Sources */ = {
@@ -148,7 +220,7 @@
 			files = (
 				336E34E92385E70800DC164A /* AppDelegate.swift in Sources */,
 				336E34EB2385E70800DC164A /* SceneDelegate.swift in Sources */,
-				336E34ED2385E70800DC164A /* ContentView.swift in Sources */,
+				336E34ED2385E70800DC164A /* AuthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +354,7 @@
 		};
 		336E34FA2385E70900DC164A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97D7F022B1F065F3B9BE009F /* Pods-WhatappCloneApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +375,7 @@
 		};
 		336E34FB2385E70900DC164A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49D2AD8BE4D8EB7C3A617E82 /* Pods-WhatappCloneApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
