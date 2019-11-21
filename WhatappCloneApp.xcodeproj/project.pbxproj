@@ -14,6 +14,10 @@
 		336E34F22385E70900DC164A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 336E34F12385E70900DC164A /* Preview Assets.xcassets */; };
 		336E34F52385E70900DC164A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 336E34F32385E70900DC164A /* LaunchScreen.storyboard */; };
 		336E34FD2385E7B600DC164A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 336E34FC2385E7B600DC164A /* GoogleService-Info.plist */; };
+		336F975F238631CF00C34DB5 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336F975E238631CF00C34DB5 /* UserListView.swift */; };
+		336F976123863C2F00C34DB5 /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336F976023863C2F00C34DB5 /* userModel.swift */; };
+		336F976323863CA900C34DB5 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336F976223863CA900C34DB5 /* UserStore.swift */; };
+		336F9765238656B100C34DB5 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336F9764238656B100C34DB5 /* ChatView.swift */; };
 		DE05E3C490B9F41BB730E06E /* Pods_WhatappCloneApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 549556FC0AAFB95C6DC702CE /* Pods_WhatappCloneApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,10 @@
 		336E34F42385E70900DC164A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		336E34F62385E70900DC164A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		336E34FC2385E7B600DC164A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		336F975E238631CF00C34DB5 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		336F976023863C2F00C34DB5 /* userModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userModel.swift; sourceTree = "<group>"; };
+		336F976223863CA900C34DB5 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		336F9764238656B100C34DB5 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		49D2AD8BE4D8EB7C3A617E82 /* Pods-WhatappCloneApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatappCloneApp.release.xcconfig"; path = "Target Support Files/Pods-WhatappCloneApp/Pods-WhatappCloneApp.release.xcconfig"; sourceTree = "<group>"; };
 		549556FC0AAFB95C6DC702CE /* Pods_WhatappCloneApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatappCloneApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D7F022B1F065F3B9BE009F /* Pods-WhatappCloneApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatappCloneApp.debug.xcconfig"; path = "Target Support Files/Pods-WhatappCloneApp/Pods-WhatappCloneApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +84,10 @@
 				336E34E82385E70800DC164A /* AppDelegate.swift */,
 				336E34EA2385E70800DC164A /* SceneDelegate.swift */,
 				336E34EC2385E70800DC164A /* AuthView.swift */,
+				336F9764238656B100C34DB5 /* ChatView.swift */,
+				336F976023863C2F00C34DB5 /* userModel.swift */,
+				336F976223863CA900C34DB5 /* UserStore.swift */,
+				336F975E238631CF00C34DB5 /* UserListView.swift */,
 				336E34EE2385E70900DC164A /* Assets.xcassets */,
 				336E34F32385E70900DC164A /* LaunchScreen.storyboard */,
 				336E34F62385E70900DC164A /* Info.plist */,
@@ -218,8 +230,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				336F976323863CA900C34DB5 /* UserStore.swift in Sources */,
+				336F975F238631CF00C34DB5 /* UserListView.swift in Sources */,
 				336E34E92385E70800DC164A /* AppDelegate.swift in Sources */,
+				336F976123863C2F00C34DB5 /* userModel.swift in Sources */,
 				336E34EB2385E70800DC164A /* SceneDelegate.swift in Sources */,
+				336F9765238656B100C34DB5 /* ChatView.swift in Sources */,
 				336E34ED2385E70800DC164A /* AuthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,7 +6,8 @@ target 'WhatappCloneApp' do
   use_frameworks!
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
-  pod 'Firebase/Firebase', '6.12'
+  pod 'Firebase/Firestore'
+
 
   # Pods for WhatappCloneApp
 
