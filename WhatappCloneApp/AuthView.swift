@@ -9,10 +9,11 @@
 import SwiftUI
 import Firebase
 
+
 struct AuthView: View {
     
-    @State var username = ""
-    @State var password = ""
+    @State var username = "bigmsg@naver.com"
+    @State var password = "803500"
     
     @State var showAuthView = true
     
@@ -25,9 +26,11 @@ struct AuthView: View {
             if showAuthView {
                 VStack {
                     TextField("Enter Your username", text: $username).padding().autocapitalization(.none)
-                    
                     TextField("Enter password", text: $password).padding()
+                    
                     HStack {
+                        
+                        // 로그인
                         Button(action: {
                             self.signIn()
                         }){
@@ -53,6 +56,7 @@ struct AuthView: View {
                     
                     //EmptyView.frame(height: 10)
                     
+                    // 회원가입
                     HStack {
                         Button(action: {
                             self.signUp()
@@ -73,9 +77,13 @@ struct AuthView: View {
             } else {
                 NavigationView {
                     List(userStore.userArray) { user in
-                        Text(user.username)
+                        //Text(user.username)
                         NavigationLink(destination: ChatView(userToChat: user)) {
-                            Text(user.username)
+                            if user.uidFromFirebase == Auth.auth().currentUser?.uid {
+                                Text(user.username).bold().foregroundColor(.blue)
+                            } else {
+                                Text(user.username)
+                            }
                         }
                         
                     }.navigationBarTitle("WhatsApp Clone")
@@ -110,6 +118,10 @@ struct AuthView: View {
     
     func signUp() {
         // Firebase Auth
+        /*
+            1. Authentication 저장
+            2. Database - Users 에 저장
+         */
         Auth.auth().createUser(withEmail: username, password: password) { (result, error) in
             if error != nil {
                 print(error?.localizedDescription)
